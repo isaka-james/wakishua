@@ -5,6 +5,7 @@ import pyautogui
 
 # Initialize tkinter to get screen dimensions
 root = tk.Tk()
+
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 root.withdraw()  # Hide the tkinter root window
@@ -82,8 +83,9 @@ def detect_gesture(hand_landmarks):
                 if (index_middle_dist > move_threshold and
                     index_ring_dist > move_threshold and
                     index_pinky_dist > move_threshold):
-                    # Move the mouse according to the index finger position
-                    pyautogui.moveTo(index_x, index_y)
+                        screen_x = int(index_x / window_width * screen_width)
+                        screen_y = int(index_y / window_height * screen_height)
+                        pyautogui.moveTo(screen_x, screen_y)
                 else:
                     # Detect scrolling down (middle and thumb together)
                     if thumb_middle_dist < gesture_threshold:
