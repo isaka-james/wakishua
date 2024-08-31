@@ -25,12 +25,6 @@ Follow these steps to install Wakishua:
    Make sure Python is installed on your system, then proceed to install the required libraries:
 
    ```bash
-   pip install -r requirements.txt
-   ```
-
-   If the `requirements.txt` file is not available, manually install the dependencies:
-
-   ```bash
    pip install opencv-python mediapipe tkinter
    ```
 
