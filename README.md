@@ -1,5 +1,9 @@
 # Wakishua - Advanced Hand Gesture Mouse Control
 
+<p>
+  <img src="https://komarev.com/ghpvc/?username=isaka-wakishua&label=Wakishua&color=0e75b6&style=flat" alt="since 21 Feb,2024" />
+</p>
+
 Wakishua is an innovative Python-based project that enables seamless mouse control using hand gestures. By leveraging the power of OpenCV, MediaPipe, and Tkinter, Wakishua transforms your computer interaction into a touch-free experience, making it particularly effective for tasks like navigating YouTube.
 
 ## Key Features
